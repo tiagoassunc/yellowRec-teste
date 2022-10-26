@@ -29,6 +29,10 @@
 
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 95rem) {
+    min-width: 0rem;
+  }
 }
 
 .type-handler {
@@ -42,6 +46,7 @@
   &-bttn {
     font-size: getFontSize(md);
     padding: 0.8rem 1.5rem;
+    margin: 0 2rem;
     background-color: getColor(primary);
     border: none;
     border-radius: getBorder(input);
