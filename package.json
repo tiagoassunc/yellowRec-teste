@@ -8,7 +8,7 @@
   "scripts": {
     "build": "webpack --config webpack.prod.config.js",
     "dev": "webpack serve --config webpack.config.js",
-    "deploy": "gh-pages -d docs"
+    "deploy": "yarn build gh-pages -d docs"
   },
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
