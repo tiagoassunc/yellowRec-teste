@@ -1,0 +1,14 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+
+.header-container {
+  width: 100%;
+  height: 10rem;
+  background-color: getColor(secondary);
+  @include center;
+}
+
+.logo-title {
+  color: getColor(primary);
+  font-size: getFontSize(xl) * 1.25;
+}
