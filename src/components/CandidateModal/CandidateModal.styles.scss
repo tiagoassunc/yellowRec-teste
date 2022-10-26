@@ -92,9 +92,9 @@
   }
 
   &-content {
-    color: getColor(tertiary);
+    color: getColor(primary);
     font-size: getFontSize(xs);
-    background-color: rgba(0, 0, 0, 0.355);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 1rem;
     border-radius: getBorder(input);
     margin: 1rem;
