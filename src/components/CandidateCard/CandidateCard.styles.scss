@@ -2,7 +2,7 @@
 @import "../../styles/utils/mixins";
 
 .candidateCard-container {
-  height: 30rem;
+  min-height: 38rem;
   width: 28rem;
   background-color: rgba(245, 245, 245, 0.15);
   border-radius: getBorder(card);
@@ -14,7 +14,7 @@
 
 .moreInfo-container {
   height: 15%;
-  width: 100%;
+  padding: 1.5rem;
   background-color: getColor(primary);
   @include center;
 }
@@ -50,4 +50,27 @@
 
 .photo-icon {
   height: 2rem;
+}
+
+.section-info {
+  margin-bottom: 2.5rem;
+}
+
+.info-container {
+  padding: 0 1.5rem;
+
+  &-title {
+    font-size: getFontSize(xs);
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline getColor(primary);
+  }
+
+  &-content {
+    color: getColor(tertiary);
+    font-size: getFontSize(xs);
+    background-color: rgba(0, 0, 0, 0.355);
+    padding: 1rem;
+    border-radius: getBorder(input);
+    margin: 1rem;
+  }
 }

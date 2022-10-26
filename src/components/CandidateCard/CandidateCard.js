@@ -25,6 +25,22 @@ export const CandidateCard = ({ candidate }) => {
             />
           </div>
         </div>
+        <div className="info-container">
+          <div className="section-info">
+            <p className="info-container-title">Name:</p>
+            <p className="info-container-content">{candidate.name}</p>
+          </div>
+          <div className="section-info">
+            <p className="info-container-title">Email:</p>
+            <p className="info-container-content">{candidate.email}</p>
+          </div>
+          <div className="section-info">
+            <p className="info-container-title">Company:</p>
+            <p className="info-container-content">
+              {candidate.company.catchPhrase}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
