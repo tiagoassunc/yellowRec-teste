@@ -1,0 +1,18 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+
+.explore-container {
+  height: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-title {
+  color: getColor(secondary);
+  font-size: getFontSize(xl) * 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline getColor(primary);
+}
