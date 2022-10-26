@@ -21,7 +21,8 @@
 }
 
 .candidate-modal {
-  width: 80%;
+  min-width: 90rem;
+  max-width: 120rem;
   height: 80%;
   background-color: white;
   border-radius: getBorder(card);
