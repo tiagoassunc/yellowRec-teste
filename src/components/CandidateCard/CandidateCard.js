@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { FaExpand, FaRegSmileBeam } from "react-icons/fa";
 
 import "./CandidateCard.styles.scss";
 
+import { CandidateModal } from "../CandidateModal/CandidateModal";
+
 export const CandidateCard = ({ candidate }) => {
+  const [modal, setModal] = useState({
+    isOpen: true,
+    candidate,
+  });
+
   console.log("candidate", candidate);
 
   return (
@@ -42,6 +49,9 @@ export const CandidateCard = ({ candidate }) => {
           </div>
         </div>
       </div>
+      {modal.isOpen === true ? (
+        <CandidateModal candidate={modal.candidate} />
+      ) : null}
     </div>
   );
 };
