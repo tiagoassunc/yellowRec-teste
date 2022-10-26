@@ -1,12 +1,53 @@
 @import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
 
 .candidateCard-container {
-  padding: 10rem;
-  height: 8rem;
-  width: 3rem;
+  height: 30rem;
+  width: 28rem;
   background-color: rgba(245, 245, 245, 0.15);
   border-radius: getBorder(card);
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   color: white;
+  overflow: hidden;
+}
+
+.moreInfo-container {
+  height: 15%;
+  width: 100%;
+  background-color: getColor(primary);
+  @include center;
+}
+
+.buttonMore-info {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: getBorder(round);
+  height: 2.5rem;
+  width: 2.5rem;
+  @include center;
+}
+
+.mainContent-container {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-container {
+  width: 100%;
+  @include center;
+}
+
+.buttonSmile-photo {
+  margin: 2rem;
+  background-color: getColor(primary);
+  border-radius: getBorder(round);
+  height: 5rem;
+  width: 5rem;
+  @include center;
+}
+
+.photo-icon {
+  height: 2rem;
 }
