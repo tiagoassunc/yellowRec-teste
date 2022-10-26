@@ -22,8 +22,12 @@
 .buttonMore-info {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: getBorder(round);
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2.75rem;
+  width: 2.75rem;
+  color: getColor(tertiary);
+
+  border: none;
+  font-size: 1.5rem;
   @include center;
 }
 
@@ -45,6 +49,7 @@
   border-radius: getBorder(round);
   height: 5rem;
   width: 5rem;
+
   @include center;
 }
 

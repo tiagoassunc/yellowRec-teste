@@ -8,18 +8,24 @@ import { CandidateModal } from "../CandidateModal/CandidateModal";
 
 export const CandidateCard = ({ candidate }) => {
   const [modal, setModal] = useState({
-    isOpen: true,
-    candidate,
+    isOpen: false,
+    candidate: null,
   });
-
-  console.log("candidate", candidate);
 
   return (
     <div className="candidateCard-container">
       <div className="moreInfo-container">
-        <div className="buttonMore-info">
+        <button
+          className="buttonMore-info"
+          onClick={() => {
+            setModal({
+              isOpen: true,
+              candidate: candidate,
+            });
+          }}
+        >
           <FaExpand />
-        </div>
+        </button>
       </div>
       <div className="mainContent-container">
         <div className="photo-container">
@@ -50,7 +56,12 @@ export const CandidateCard = ({ candidate }) => {
         </div>
       </div>
       {modal.isOpen === true ? (
-        <CandidateModal candidate={modal.candidate} />
+        <CandidateModal
+          candidate={modal.candidate}
+          closeModal={() => {
+            setModal({ isOpen: false, candidate: null });
+          }}
+        />
       ) : null}
     </div>
   );
