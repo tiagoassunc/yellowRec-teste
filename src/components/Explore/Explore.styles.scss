@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 170rem;
 }
 
 .list-title {
@@ -15,6 +16,10 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: underline getColor(primary);
+
+  @media screen and (max-width: 50rem) {
+    font-size: getFontSize(md) * 1.5;
+  }
 }
 
 .yellowRec-container {
@@ -31,4 +36,8 @@
 .list-description {
   margin: 1.5rem 0rem 0rem 0rem;
   text-shadow: 2px 1px 1px getColor(primary);
+
+  @media screen and (max-width: 50rem) {
+    font-size: getFontSize(md);
+  }
 }
