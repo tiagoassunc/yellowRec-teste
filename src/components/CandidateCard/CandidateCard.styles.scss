@@ -1,0 +1,12 @@
+@import "../../styles/utils/variables";
+
+.candidateCard-container {
+  padding: 10rem;
+  height: 8rem;
+  width: 3rem;
+  background-color: rgba(245, 245, 245, 0.15);
+  border-radius: getBorder(card);
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
