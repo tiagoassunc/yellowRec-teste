@@ -6,12 +6,12 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "bundle.[contenthash].js",
-    path: path.resolve(__dirname, "./docs"),
+    path: path.resolve(__dirname, "./dist"),
     publicPath: "",
   },
   mode: "development",
   devServer: {
-    static: path.resolve(__dirname, "./docs"),
+    static: path.resolve(__dirname, "./dist"),
     compress: true,
     hot: true,
     open: true,
